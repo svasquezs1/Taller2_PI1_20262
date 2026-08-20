@@ -23,10 +23,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', movieViews.home),
+    path('', movieViews.home, name='home'),
 
     # Ruta para una página 'About'
-    path('about/', movieViews.about),
+    path('about/', movieViews.about, name='about'),
     path('news/', include('news.urls')),
 
 ]
