@@ -28,6 +28,7 @@ urlpatterns = [
     # Ruta para una página 'About'
     path('about/', movieViews.about, name='about'),
     path('news/', include('news.urls')),
+    path('statistics/', movieViews.statistics_view, name='statistics'),
 
 ]
 
